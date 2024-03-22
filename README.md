@@ -196,6 +196,13 @@ pnpm run remix:dev
   </tr>
 </table>
 
+## Inspired By
+
+Please check out these previous works that helped inspire the creation of vmail. 🙏
+
+- [akazwz/smail](https://github.com/akazwz/smail)
+- [email.ml](email.ml)
+
 ## License
 
 GNU General Public License v3.0
@@ -203,5 +210,3 @@ GNU General Public License v3.0
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=yesmore/vmail&type=Date)](https://star-history.com/#yesmore/vmail&Date)
-
-Inspired by smail.pw & email.ml
