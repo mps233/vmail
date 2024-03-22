@@ -1,12 +1,12 @@
-![cover](https://img.inke.app/file/beb0212f96c6cd37eaeb8.jpg)
+<div align="center">
+  <h1>𝐕𝐌𝐀𝐈𝐋.𝐃𝐄𝐕</h1>
+  <p>Temporary email service build with email worker.</p>
+  <img src="https://img.inke.app/file/beb0212f96c6cd37eaeb8.jpg"/>
+</div>
 
-# VMAIL.DEV
+<p align="right">English | <a href="/README.md">简体中文</a></p>
 
-English | [中文文档](/README.md)
-
-Temporary email service build with email worker.
-
-## Features and Principles
+## Features
 
 - Privacy-friendly, no registration required, out-of-the-box
 - Better UI design, more concise
@@ -20,18 +20,11 @@ Principles：
 
 > Worker receives email -> saves to database -> client queries email
 
-### Screenshot demo
-
-Here: https://vmail.dev
-
-![](https://vmail.dev/preview.png)
-
 ## Self-hosted Tutorial
 
 ### Requirements
 
-- [Cloudflare](https://dash.cloudflare.com/) account (Email service)
-- Domain name hosted on Cloudflare
+- [Cloudflare](https://dash.cloudflare.com/) account and a domain name hosted on Cloudflare
 - [turso](https://turso.tech) sqlite (a free plan available for personal use)
 - [Vercel](https://vercel.com) or [fly.io](https://fly.io) to deploy Remix app
 
@@ -177,19 +170,8 @@ pnpm run remix:dev
 
 ## Community Group
 
-- 扫码或加微信 `yesmore_cc` 拉讨论群 (备注 vmail)
+- 加微信 `yesmore_cc` 拉讨论群 (**备注你的职业**)
 - Discord: https://discord.gg/d68kWCBDEs
-
-<table>
-  <tr>
-    <td>
-      <img src="https://img.inke.app/file/4bc1cb6681c3e5ff75150.jpg"/>
-    </td>
-    <td>
-      <img src="https://img.inke.app/file/711501f1ee488b3423aff.jpg"/>
-    </td>
-  </tr>
-</table>
 
 ## License
 

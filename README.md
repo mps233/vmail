@@ -1,38 +1,32 @@
-![cover](https://img.inke.app/file/beb0212f96c6cd37eaeb8.jpg)
 
-# VMAIL.DEV
+<div align="center">
+  <h1>𝐕𝐌𝐀𝐈𝐋.𝐃𝐄𝐕</h1>
+  <p>使用 Cloudflare email worker 实现的临时电子邮件服务</p>
+  <img src="https://img.inke.app/file/beb0212f96c6cd37eaeb8.jpg"/>
+</div>
 
-[English](/README_en.md) | 中文文档
+<p align="right"><a href="https://github.com/yesmore/vmail/blob/main/README_en.md">English</a> | 简体中文</p>
 
-使用 Cloudflare email worker 实现的临时电子邮件服务。
+## 🌈 特点
 
-## 特点与基本原理
-
-- 隐私友好，无需注册，开箱即用
-- 更好的 UI 设计，更加简洁
-- 100% 开源，快速部署，无需服务器
+- 🎯 隐私友好，无需注册，开箱即用
+- ✨ 更好的 UI 设计，更加简洁
+- 🚀 快速部署，无需服务器
 
 原理：
 
-- 接收电子邮件（email worker）
-- 显示电子邮件（remix）
+- Email worker 接收电子邮件
+- 前端显示电子邮件（remix）
 - 邮件存储（sqlite）
 
 > worker接收电子邮件 -> 保存到数据库 -> 客户端查询电子邮件
 
-### 网站截图
-
-https://vmail.dev
-
-![](https://vmail.dev/preview.png) 
-
-## 自部署教程
+## 👋 自部署教程
 
 ### 准备工作
 
-- [Cloudflare](https://dash.cloudflare.com/) 账户（email worker）
-- 托管在 Cloudflare 上的域名
-- [turso](https://turso.tech) sqlite（个人免费计划足够）
+- [Cloudflare](https://dash.cloudflare.com/) 账户与托管在 Cloudflare 上的域名
+- [turso](https://turso.tech) sqlite 数据库（个人免费计划足够）
 - [Vercel](https://vercel.com) 或 [fly.io](https://fly.io) 账号部署前端用户界面
 
 ### 步骤
@@ -51,7 +45,7 @@ https://vmail.dev
 
 > ⚠️ 注意：**左上角有一个加号按钮，我尝试点击它没有任何提示或效果，所以我使用了 turso 提供的 cli 来初始化表。**
 
-Cli文档：https://docs.turso.tech/cli/introduction 
+Cli 文档：https://docs.turso.tech/cli/introduction 
 
 Linux (或 mac/windows) 终端执行：
 
@@ -66,10 +60,11 @@ turso auth login
 turso db shell <database-name>
 ```
 
-将sql脚本复制到终端运行（packages/database/drizzle/0000_sturdy_arclight.sql）：
+将sql脚本复制到终端运行（packages/database/drizzle/0000_sturdy_arclight.sql）
 
-```sql
-CREATE TABLE `emails` (
+<details>
+<summary>查看脚本内容</summary>
+<pre ><code>CREATE TABLE `emails` (
  `id` text PRIMARY KEY NOT NULL,
  `message_from` text NOT NULL,
  `message_to` text NOT NULL,
@@ -92,7 +87,9 @@ CREATE TABLE `emails` (
  `created_at` integer NOT NULL,
  `updated_at` integer NOT NULL
 );
-```
+</code></pre>
+</details>
+<br>
 
 **2.部署 email worker**
 
@@ -168,7 +165,7 @@ vercel 演示如何解析：
 
 以上，完成！
 
-## 本地运行调试
+## 🔨 本地运行调试
 
 复制 `apps/remix/.env.example` 到 `apps/remix/.env` 并填写必要的环境变量。
 
@@ -180,30 +177,19 @@ pnpm install
 pnpm run remix:dev
 ```
 
-## 交流群
+## ❤️ 交流群
 
-- 扫码或加微信 `yesmore_cc` 拉讨论群 (备注 vmail)
+- 加微信 `yesmore_cc` 拉讨论群 (**备注你的职业**)
 - Discord: https://discord.gg/d68kWCBDEs
 
-<table>
-  <tr>
-    <td>
-      <img src="https://img.inke.app/file/4bc1cb6681c3e5ff75150.jpg"/>
-    </td>
-    <td>
-      <img src="https://img.inke.app/file/711501f1ee488b3423aff.jpg"/>
-    </td>
-  </tr>
-</table>
-
-## Inspired By
+## 🎨 Inspired By
 
 Please check out these previous works that helped inspire the creation of vmail. 🙏
 
 - [akazwz/smail](https://github.com/akazwz/smail)
 - [email.ml](email.ml)
 
-## License
+## 📝 License
 
 GNU General Public License v3.0
 
