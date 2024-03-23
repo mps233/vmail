@@ -1,11 +1,9 @@
-
 <div align="center">
   <h1>𝐕𝐌𝐀𝐈𝐋.𝐃𝐄𝐕</h1>
+  <p><a href="https://github.com/yesmore/vmail/blob/main/README_en.md">English</a> | 简体中文</p>
   <p>使用 Cloudflare email worker 实现的临时电子邮件服务</p>
   <img src="https://img.inke.app/file/beb0212f96c6cd37eaeb8.jpg"/>
 </div>
-
-<p align="right"><a href="https://github.com/yesmore/vmail/blob/main/README_en.md">English</a> | 简体中文</p>
 
 ## 🌈 特点
 

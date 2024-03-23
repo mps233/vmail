@@ -1,10 +1,9 @@
 <div align="center">
   <h1>𝐕𝐌𝐀𝐈𝐋.𝐃𝐄𝐕</h1>
+  <p>English | <a href="/README.md">简体中文</a></p>
   <p>Temporary email service build with email worker.</p>
   <img src="https://img.inke.app/file/beb0212f96c6cd37eaeb8.jpg"/>
 </div>
-
-<p align="right">English | <a href="/README.md">简体中文</a></p>
 
 ## Features
 
